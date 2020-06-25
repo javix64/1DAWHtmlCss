@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3.9. Ejemplos de formularios</title>
+	<style type="text/css">
+		body{
+			margin: auto;
+			width: 70%;
+			font-family: sans-serif;
+			text-align: center;
+
+		}
+		div{
+		margin: auto;
+		width: 60%;
+		}
+	</style>
+</head>
+<body>
+<h1>
+Máster y doctorado para alumnos internacionales: preguntas 	frecuentes.
+</h1>
+<h2>
+	Envía tu pregunta.
+</h2>
+<form>
+<div>
+<table>
+	<tr>
+		<td>
+			<label>Título *</label><br>
+			<input type="text" name="titulo" size="20" required="required">
+		</td>
+
+		<td>
+			<label>Asunto *</label><br>
+			<select name="asunto">
+				<option value="master" selected="selected" size="20" required="required">Master y doctorado para alumnos internacionales.</option>
+			</select>
+		</td>
+
+	</tr>
+
+	<tr>
+		<td>
+			<label>Email *</label><br>
+			<input type="text" name="email" size="20" required="required">
+		</td>
+
+		<td>
+			<label>Nombre *</label><br>
+			<input type="text" name="nombre" size="20" required="required">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Apellidos *</label><br>
+			<input type="text" name="apellidos" size="20" required="required">
+		</td>
+		
+		<td>
+			<label>Teléfono</label><br>
+			<input type="text" name="telefono" size="20">
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2">
+			<label>Consulta *</label> <br>
+			<textarea rows="6" cols="80" required="required" style="resize: none"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>
+				<input type="checkbox" name="captcha">No soy un robot.
+			</label>
+		</td>
+		<td><button type="submit">ENVIAR</button></td>
+
+	</tr>
+</table>
+</div>
+</form>
+</body>
+</html>

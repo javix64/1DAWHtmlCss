@@ -1,0 +1,64 @@
+<!--Vamos a crear 4 imágenes, superpuestas en forma de cascada. Una vez insertadas en el documento html, vamos a hacer que cada vez que pasemos el ratón por una imagen va a superponerse en el primer plano.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 4 hover</title>
+	<style type="text/css">
+		#imagen1{
+			z-index: 1;
+			top:100px;
+			left: 100px;
+			position: absolute;
+		}
+		#imagen2{
+			z-index: 2;
+			top:200px;
+			left: 200px;
+			position: absolute;
+
+		}
+		#imagen3{
+			z-index: 3;
+			top:300px;
+			left: 300px;
+			position: absolute;
+		}
+		#imagen4{
+			z-index: 4;
+			top: 400px;
+			left: 400px;
+			position: absolute;
+		}
+		#imagenes{
+			background-color: red;
+			height: 900px;
+			width: 900px;
+			border-radius: 10%;
+			box-shadow: inset 15px 15px 30px brown;
+		}
+		div:hover{
+			z-index: 5;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+<div id="imagenes">
+
+<div>
+<img id="imagen1" src="manhattan1.jpg" width="400" height="400">
+</div>
+<div>
+<img id="imagen2" src="manhattan2.jpg" width="400" height="400">
+</div>
+<div>
+<img id="imagen3" src="manhattan3.jpg" width="400" height="400">
+</div>
+<div>
+<img id="imagen4" src="manhattan4.jpg" width="400" height="400">
+</div>
+
+</div>
+</body>
+</html>

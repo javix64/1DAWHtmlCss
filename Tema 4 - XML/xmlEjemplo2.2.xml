@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<venta xlmns="empresa:espacios:info"
+		xlmns:venta="empresa:espacios:venta">
+	<producto id="p_987">Mesa de despacho</producto>
+	<precio moneda="Euro">300</precio>
+	<unidades>200</unidades>
+</venta>
+precio pertenece a info

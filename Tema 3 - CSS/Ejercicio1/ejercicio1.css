@@ -1,0 +1,39 @@
+*{
+	background-color: orange;
+	text-align: justify;
+}
+h1+h2{
+	color:red;
+	background-color: brown;
+}
+div p{
+	font-size: 20px;
+}
+div p > #poesia1{
+	color: blue!important;
+}
+div p > #poesia2{
+	color: blue;
+	background-color: white;
+}
+section * p{
+	font-style:italic;
+	font-stretch: expanded;
+}
+
+h2::first-letter{
+	color: White;
+}
+article::first-line{
+	font-family:verdana;
+}
+article::before{
+	content:"No sé paliar mi odio";
+	color:black;
+	font-size:30px;
+}
+article::after{
+	content:"O estoy loco por hablarles de amor en tiempos de odio.";
+	color:white;
+	font-size:30px;
+}

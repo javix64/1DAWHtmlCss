@@ -1,0 +1,21 @@
+Definir los siguientes tipos simples con las siguientes especificaciones:
+
+- Una cadena de texto que represente las matrículas españolas anteriores a la normalización. El formato era: una o dos letras mayúsculas + guión + cuatro dígitos + un guión + una o dos letras mayúsculas (GR-1234-AB).
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name="SpainMatriculas">
+	<xs:simpleType>
+		<xs:pattern base="xs:string">
+			<xsd:pattern value="[A-Z]{1,2}\-\d{4}\-[A-Z]{1,2}">
+		</xs:pattern>
+	</xs:simpleType>
+</xs:element>
+- Una cadena de texto que represente las cuatro posibles formas de pago: con tarjeta VISA, MasterCard, American Express y en Efectivo.
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name="tipoDePago">
+	<xs:simpleType>
+		<xs:pattern base="xs:string">
+			<xsd:pattern value="VISA/MasterCard/American Express/Efectivo">
+		</xs:pattern>
+	</xs:simpleType>
+</xs:element>
+A continuación crea un esquema que contenga las matrículas, y otro esquema para la forma de pago. Por último, crea una instancia para cada esquema que sea válido.

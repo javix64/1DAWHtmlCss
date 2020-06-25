@@ -1,0 +1,25 @@
+@media screen and (min-width:576px){
+	body{
+		background-color:grey;
+	}
+}
+@media screen and (min-width:768px){
+	body{
+		background-color:white;
+	}
+}
+.red{
+	background-color: red;
+}
+.green{
+	background-color:green;
+}
+.yellow{
+	background-color:yellow;
+}
+.grey{
+	background-color:grey;
+}
+.blue{
+	background-color:blue;
+}

@@ -1,0 +1,35 @@
+xs:length
+Especifica una longitud fija.
+
+xs:minLength 
+Especifica una longitud mínima.
+
+xs:maxLength 
+Especifica una longitud máxima.
+
+xs:pattern 
+Especifica un patrón de caracteres admitidos.
+
+xs:enumeration 
+Especifica una lista de valores admitidos.
+
+xs:whiteSpace 
+Especifica cómo se debe tratar a los posibles espacios en blanco, las tabulaciones, los saltos de línea y los retornos de carro que puedan aparecer.
+
+xs:maxInclusive 
+Especifica que el valor debe ser menor o igual que el indicado.
+
+xs:maxExclusive 
+Especifica que el valor debe ser menor que el indicado.
+
+xs:minExclusive 
+Especifica que el valor debe ser mayor que el indicado.
+
+xs:minInclusive 
+Especifica que el valor debe ser mayor o igual que el indicado.
+
+xs:totalDigits 
+Especifica el número máximo de dígitos que puede tener un número.
+
+xs:fractionDigits 
+Especifica el número máximo de decimales que puede tener un número.

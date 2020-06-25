@@ -1,0 +1,15 @@
+body{
+	background-color: blue;
+}
+h1{
+	background-color: orange;	
+}
+h2{
+	background-color: green;
+}
+p{
+	background-color: white;
+}
+p+p{
+	background-color: #7777ff;
+}

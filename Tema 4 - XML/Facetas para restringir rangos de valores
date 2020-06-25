@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:element name="edadLaboral">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="16"/>
+			<xs:maxExclusive value="70"/>
+		</xs:restriction base="xs:integer">
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="TipoEstaciones">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Primavera"/>
+			<xs:enumeration value="Verano"/>
+			<xs:enumeration value="Otoño"/>
+			<xs:enumeration value="Invierno"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<xs:element name="GranadaCopaDelRey">
+	<xs:simpleType>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="cuartosFinal"/>
+			<xs:enumeration value="semifinal"/>
+			<xs:enumeration value="FINAL"/>
+			<xs:enumeration value="VamosGranadaaaa!!"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3.9.3 Ejemplos de formularios</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		#arribacaja {
+			width: 900px;
+			height: 150px;
+			margin: auto;
+		}
+		#abajocaja{
+			width: 900px;
+			margin: auto;
+		}
+		#abajotabla{
+			margin: auto;
+			width: 80%;
+		}
+		h1,h3{
+			text-align: center;
+		}
+		button{
+			float: right;
+		}
+	</style>
+
+</head>
+<body>
+
+<div>
+<h1>Ejemplo de Captura de Excel - Access</h1>
+<h3>Asesor: Javier H.M.</h3>
+<div id="arribacaja">
+	<table>
+		<tr>
+			<td>
+				Dia
+			</td>
+			<td>
+				Mes
+			</td>
+			<td>
+				Año
+			</td>
+			<td>
+				Hora
+			</td>
+			<td>
+				CAC
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<select name="dia">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+			</td>
+			<td>
+				<select name="mes">
+					<option value="enero">Enero</option>
+					<option value="febrero">Febrero</option>
+					<option value="marzo">Marzo</option>
+					<option value="abril">Abril</option>
+					<option value="mayo">Mayo</option>
+					<option value="junio">Junio</option>
+					<option value="julio">Julio</option>
+					<option value="agosto">Agosto</option>
+					<option value="septiembre">Septiembre</option>
+					<option value="octubre">Octubre</option>
+					<option value="noviembre">Noviembre</option>
+					<option value="diciembre">Diciembre</option>
+				</select>
+			</td>
+			<td>
+				<select name="year">
+					<option value="2020">2020</option>
+					<option value="2019">2019</option>
+					<option value="2018">2018</option>
+					<option value="2017">2017</option>
+					<option value="2016">2016</option>
+					<option value="2015">2015</option>
+				</select>	
+			</td>
+			<td>
+				<select name="hora">
+					<option value="2100">21:00</option>
+					<option value="2000">20:00</option>
+					<option value="1900">19:00</option>
+					<option value="1800">18:00</option>
+					<option value="17:00">17:00</option>
+					<option value="16:00">16:00</option>
+				</select>	
+			</td>
+			<td>
+				<select name="cac">
+					<option value="cac1">cac1</option>
+					<option value="cac2">cac2</option>
+					<option value="cac3">cac3</option>
+					<option value="cac4">cac4</option>
+					<option value="cac5">cac5</option>
+					<option value="cac6">cac6</option>
+				</select>	
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Folio
+			</td>
+			<td>
+				Comentarios
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="folio">
+			</td>
+			<td colspan="4">
+				<input type="text" name="comentarios" size="60">
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div id="abajocaja">
+	<fieldset>
+		<legend>Datos del cliente</legend>
+		<table id="abajotabla">
+			<tr>
+				<td>
+					Nombre
+				</td>
+				<td>
+					Ciudad
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="Nombre" size="20">
+				</td>
+				<td>
+					<input type="text" name="Ciudad" size="20">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Celular
+				</td>
+				<td>
+					Estado
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="Celular" size="20">
+				</td>
+				<td>
+					<input type="text" name="Estado" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					RFC
+				</td>
+				<td>
+					CP
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="RFC" size="20">
+				</td>
+				<td>
+					<input type="text" name="CP" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					No. de Empleo o contacto
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="contacto" size="20">	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Domicilio
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="Domicilio" size="20">	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Colonia	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="colonia" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Entre qué calles	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="calles" size="20">
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+<button type="button" onclick="window.open('', '_self', ''); window.close();">CERRAR</button>
+<button type="submit">ENVIAR</button>
+
+</div>
+
+</body>
+</html>

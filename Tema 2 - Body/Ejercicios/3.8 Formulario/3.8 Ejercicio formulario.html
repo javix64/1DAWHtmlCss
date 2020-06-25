@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 3.8 Ejercicio formulario</title>
+</head>
+
+<body>
+<h1>INDUSTRAIS STASPETAO S.A.</h1>
+<form>
+<fieldset>
+	<legend>FORMULARIO DEL PEDIDO</legend>
+
+<table width="980" cellpadding="5">
+	<tr>
+		<td><b> > Paso 1. Identificacion</b></td>
+	</tr>
+	<tr>
+		<td>
+		<fieldset>
+				<legend>Datos del cliente</legend>
+				<label for="correo">Correo electronico</label>
+					<input type="text" id="correo" size="20" style="margin-bottom: 1%;"><br>
+				<label for="password">contraseña</label><br>
+					<input type="passwo" id="password" size="20" style="	margin-bottom: 1%;"> <br>
+				(Longitud minima 6 caracteres)
+			</fieldset>
+		</td>
+		<td>
+			<fieldset>
+				<legend>Tipo de Cliente</legend>
+				<label>
+					<input name="particular" type="radio" value="1" checked/>particular <br>
+				</label>
+				<label>
+					<input type="radio" name="asociacion" value="2"> Asociacion <br>
+				</label>
+				<label>
+					<input type="radio" name="empresa" value="3">empresa <br>
+				</label>
+			</fieldset>
+		</td>
+	</tr>
+</table>
+<table width="980" cellpadding="5">
+	<tr>
+		<td>
+			<b> >Paso 2. Pedido</b>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<fieldset>
+				<legend>Datos del producto</legend>
+				Producto <br>
+			
+			<select id="product" name="Producto" multiple="si" size="8">
+				<optgroup label="Armaduras">
+					<option value="AR001" selected="selected">
+							AR001 Oro Reluciente
+					</option>
+					<option value="AR002">
+							AR002 Plata Pulida
+					</option>
+					<option value="AR003">
+							AR003 Bronce Reforzado
+					</option>
+				</optgroup>
+				<optgroup label="Extras">
+					<option value="EX001" selected="selected">
+							EX001 Escudo
+					</option>
+					<option value="EX002">
+							EX002 Invisibilidad
+					</option>
+				</optgroup>
+			</select>
+			</fieldset>
+		</td>
+		<td>
+			<fieldset>
+				<legend>Informacion de interes</legend>
+				Comentarios <br>
+				<textarea rows="6" cols="60" placeholder="Escriba aqui su comentario"></textarea><br>
+				<input type="checkbox" id="publi" value="si" checked="checked">
+				<label for="publi"> Acepto recibir informacion publicitaria</label>
+			</fieldset>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<fieldset>
+				<legend>Datos de envio</legend>
+				<br>
+				<label for="Dire"> Direccion</label><br>
+				<input type="text" id="Dire" size="30" style="margin-bottom: 1%;">
+				<br>
+				<label for="ciudad">Ciudad</label><br>
+				<select name="ciudad">
+					<option value="gr">Granada</option>
+					<option value="al">Almeria</option>
+					<option value="sv">Sevilla</option>
+					<option value="ml">Malaga</option>
+					<option value="mc">Murcia</option>
+				</select><br>
+				<label for="cp">Codigo Postal</label> <br>
+				<input type="text" id="cp" size="20" style="margin-bottom: 1%;">
+			</fieldset>
+		</td>
+		<td>
+			<fieldset>
+				<legend>Datos Bancarios</legend>
+				<label for="entidad">Nombre de la entidad</label><br>
+				<input type="text" id="entidad" size="20" style="margin-bottom: 1%;"><br>
+				<label for="cuenta">N` de cuenta</label><br>
+				<input type="text" id="cuenta" size="20" style="margin-bottom: 1%;">
+			</fieldset>
+		</td>
+		<td>
+			
+		</td>
+		<tr>
+			<td><button type="submit">ENVIAR</button></td>
+			<td><button type="reset">RESET</button></td>
+		</tr>
+	</tr>
+</table>
+</fieldset>
+</form>
+</body>
+
+</html>

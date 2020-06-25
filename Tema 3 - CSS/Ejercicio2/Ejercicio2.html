@@ -1,0 +1,62 @@
+<!--
+Ejemplo 2: pseudo-clases
+Cada alumn@ realizará la búsqueda de los selectores
+pseudo-clase (:link, :visited, :hover, :active, :focus),
+y pondrá un ejemplo práctico de cada uno de ellos.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio2- Pseudo Clases</title>
+	<style type="text/css">
+		p{
+			background-color: red;
+			font-size: 30px;
+			text-align: center;
+			width: 500px;
+			height: 60px;
+			border-radius: 10px;
+			margin: auto;
+		}
+		p:hover{
+			background-color: pink;
+			font-size: 35px;
+			transition:.3s linear;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+			background-color: purple;
+			font-size: 30px;
+			text-align: center;
+			width: 500px;
+			height: 60px;
+			border-radius: 10px;
+			margin: auto;
+		}
+		a:link{/*unvisited link*/
+			color:red;
+		}
+		a:visited{/*visited link*/
+			color:brown;
+		}
+		a:hover{/*pasar por encima el raton*/
+			color:grey;
+			font-size: 35px;
+		}
+		a:active{/*selected link*/
+			color: black;
+		}
+		a:focus{/*selecciona el input cuando lo pulsas*/
+			background-color: black;
+		}		
+	</style>
+</head>
+<body>
+
+<a href="#">Ejemplo link</a> <br>
+
+<p>Ejemplo Hover</p> <br>
+
+</body>
+</html>

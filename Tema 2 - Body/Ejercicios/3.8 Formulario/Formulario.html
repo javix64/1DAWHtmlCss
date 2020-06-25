@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ejemplo HTML5 - Formulario</title>
+        <meta charset="utf-8">
+        <style>
+            table, th, td, tr{
+                border: 1px solid black;
+            }
+
+            th{
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            function copiaTexto(aText,destination){
+                destination.innerHTML=aText.value;
+            }
+        </script>	
+    </head>
+    <body>
+        <h1>Formularios HTML5</h1>
+
+        <form action="ProcesaFormulario.html" method="get">
+
+            <table>
+                <tr><th>Nombre</th><th>Control</th></tr>
+                <tr> <th colspan="2">Listas deplegables &lt;select&gt;</th></tr>
+                <tr>
+                    <td>
+                        Lista simple &lt;option&gt;
+                    </td>
+                    <td>
+                        <select name="listaCochesSimple">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                            <option value="fiat">Fiat</option> 
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lista agrupada &lt;optgroup&gt;
+                    </td>
+                    <td>
+                        <select name="listaCochesAgrupada">
+                            <optgroup label="Coches Suecos">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="Coches Alemanes">
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </optgroup>
+                        </select> 
+                    </td>
+                </tr>
+                <tr> <th colspan="2">Área de texto &lt;textarea&gt;</th></tr>
+
+
+                <tr>
+                    <td>
+                        Texto multilínea
+                    </td>
+                    <td>
+                        <textarea name="areaTexto" rows="4" cols="30"></textarea>
+                    </td>
+                </tr>
+
+                <tr> <th colspan="2">Entradas de datos <b>&lt;input&gt;</b></th></tr>
+                <tr>
+                    <td>
+                        Campo de texto (text)
+                    </td>
+                    <td>
+                        <input type="text" name="campoTexto"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Selección Múltiple (checkbox)
+                    </td>
+                    <td>
+                        <label><input name="checkOpcion1" type="checkbox" value="1" />Opción 1</label>
+                        <br/>
+                        <label><input name="checkOpcion2" type="checkbox" value="2"/>Opción 2</label>
+                        <br/>
+                        <input name="checkOpcion3" type="checkbox" value="3"/>Opción 3 (sin label)
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Selección única con Radio Button (radio)
+                    </td>
+                    <td>
+
+                        <label><input name="radioOpcion" type="radio" value="1" checked/>Opción 1</label>
+                        <br/>
+                        <label><input name="radioOpcion" type="radio" value="2"/>Opción 2</label>
+                        <br/>
+                        <input name="radioOpcion" type="radio" value="3" />Opción 3 (sin label)
+                        <br/>
+                        <input name="radioOpcion" type="radio" value="4"/>Opción 4 (sin label)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Botón (button)
+                    </td>
+                    <td>
+                        <input type="button" onclick="alert('Gracias por pulsar!')" value="Púlsame!" name="pulsame" /> 
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Selector de color (color)
+                    </td>
+                    <td>
+                        <input type="color" name="selectorColor"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Selector de fecha (date)
+                    </td>
+                    <td>
+                        <input type="date" name="selectorFecha"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Fecha y Hora (datetime-local) <br/>
+                        <b>Sólo soportado en Chrome/Opera <br/> y Edge versión escritorio</b>
+
+                    </td>
+                    <td>
+
+                        <input type="datetime-local" id="meeting-time"
+                               name="meeting-time" value="2018-06-12T19:30"
+                               min="2018-06-07T00:00" max="2018-06-14T00:00" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Campo para correo electrónico (email)
+                    </td>
+                    <td>
+
+                        <input type="email" name="correoE" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Subida de ficheros (file)
+                    </td>
+                    <td>
+                        <input type="file" name="subidaFichero" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Campo oculto (hidden)
+                    </td>
+                    <td>
+                        <input type="hidden" name="campoOculto" value="valorOculto"/>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Campo de imagen (image) <br/> <b>Es un botón de envío de formulario con una imagen</b>
+                    </td>
+                    <td>
+                        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Campo de imagen (image) <br/> <b>El valor por defecto</b>
+                    </td>
+                    <td>
+                        <input type="image" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Selector de Mes (month)
+                    </td>
+                    <td>
+                        <input type="month" name="selectorMes"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Número (number) <br/> <b>Entre valores min y max</b>
+                    </td>
+                    <td>
+                        <input type="number"  name="quantity" min="1" max="5"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Campo de texto para contraseñas (password)
+                    </td>
+                    <td>
+                        <input type="password" name="selectorPassw"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Valor en un rango (range) <br/> <b>Entre valores min y max</b> <br/> <b>Por defecto entre 0 y 100</b>
+                    </td>
+                    <td>
+                        <input type="range" name="selectorRango"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Botón para limpiar el formulario (reset)
+                    </td>
+                    <td>
+                        <input type="reset" value="Limpiar Formulario"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Búsqueda (search)
+                    </td>
+                    <td>
+                        <input type="search" name="busqueda"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Botón para enviar los datos del formulario (submit)
+                    </td>
+                    <td>
+
+                        <input type="submit" value="Enviar Formulario"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Teléfono (tel) <br/> <b>Se indica el patrón del teléfono</b> 
+                    </td>
+                    <td>
+                        <input type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" /> <br/>
+                        Formato: 123-456-789
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Selección de hora (time)
+                    </td>
+                    <td>
+                        <input type="time" name="selectorHora"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Dirección WEB (url)
+                    </td>
+                    <td>
+                        <input type="url" name="campoUrl"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Selector de semana (week)
+                    </td>
+                    <td>
+                        <input type="week" name="selectorSemana"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+1 tipo simple y contenido simple
+los elementos de tipo simple con contenido simple contienen contenido textual
+
+2 tipo complejo y contenido simple
+los elementos de tipo simple con contenido simple contienen atributos y contenido textual
+
+3 tipo complejo y contenido complejo
+los elementos de tipo complejo con contenido complejo pueden contener elementos vacios
+
+4 tipo complejo y contenido complejo
+los elementos de tipo complejo con contenido complejo pueden contener atributos.
+
+los elementos de tipo complejo con contenido complejo pueden contener elementos descendentes.
+
+los elementos de tipo complejo con contenido complejo pueden contener elementos descendentes y atributos
+
+7 tipo complejo y contenido complejo mixto
+los elementos de tipo complejo con contenido complejo mixto pueden tener contenido textual y elementos descendentes.
+
+8 tipo complejo y contenido complejo mixto
+los elementos de tipo complejo con contenido complejo pueden contener elementos descendentes, atributos y contenido textual
